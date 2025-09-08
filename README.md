@@ -65,6 +65,51 @@ Five stages:
 
 ---
 
+## 📂 Synthetic VQA Data
+
+This repository provides **synthetic Thai VQA datasets** for knowledge injection into compact Vision-Language Models.  
+The dataset includes both **Simple QA** and **Chain-of-Thought (CoT) QA**, with paired images, as well as evaluation sets.  
+
+### Folder Layout
+```yaml 
+VQA4Thai/
+├─ README.md # dataset card
+├─ data/ # metadata (.jsonl)
+│ ├─ CoT_5x.jsonl # 5x CoT reasoning VQA pairs
+│ ├─ simple_qa_10x.jsonl # 10x Simple VQA pairs
+│ └─ sim/ # (optional: intermediate metadata)
+├─ eval/ # evaluation JSONL sets
+│ ├─ 154_eval_qa.jsonl # Syn-150 synthetic eval set
+│ └─ 164_eval_real_img_qa.jsonl # Syn-to-Real-164 real-image eval set
+└─ images/ # paired image data
+├─ simple qa/ # images for simple QA set
+│ ├─ 0001.jpg
+│ ├─ 0002.jpg
+│ └─ ...
+├─ CoT/ # images for CoT QA set
+│ ├─ 0001.jpg
+│ └─ ...
+└─ eval/ # evaluation images
+├─ syn150/ # images for synthetic eval
+│ ├─ 0001.jpg
+│ └─ ...
+└─ syn_to_real_164/ # real-world eval images
+├─ 0001.jpg
+└─ ...
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
 ## 🚀 Quick Start with Google Colab
 
 We provide two demo notebooks to replicate our experiments:
@@ -110,3 +155,4 @@ ckpt_path = hf_hub_download(
     repo_id="OHMEGA/VLM-KnowledgeInjection",
     filename="FT_Qwen2.5VL_CoT_5x.pth"
 )
+```
