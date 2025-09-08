@@ -77,25 +77,25 @@ VQA4Thai/
 ├─ data/ # metadata (.jsonl)
 │ ├─ CoT_5x.jsonl # 5x CoT reasoning VQA pairs
 │ ├─ simple_qa_10x.jsonl # 10x Simple VQA pairs
-│ └─ sim/ # (optional: intermediate metadata)
+│ 
 ├─ eval/ # evaluation JSONL sets
 │ ├─ 154_eval_qa.jsonl # Syn-150 synthetic eval set
 │ └─ 164_eval_real_img_qa.jsonl # Syn-to-Real-164 real-image eval set
 └─ images/ # paired image data
-├─ simple qa/ # images for simple QA set
-│ ├─ 0001.jpg
-│ ├─ 0002.jpg
-│ └─ ...
-├─ CoT/ # images for CoT QA set
-│ ├─ 0001.jpg
-│ └─ ...
-└─ eval/ # evaluation images
-├─ syn150/ # images for synthetic eval
-│ ├─ 0001.jpg
-│ └─ ...
-└─ syn_to_real_164/ # real-world eval images
-├─ 0001.jpg
-└─ ...
+    ├─ simple qa/ # images for simple QA set
+    │   ├─ 0001.jpg
+    │   ├─ 0002.jpg
+    │   └─ ...
+    ├─ CoT/ # images for CoT QA set
+    │   ├─ 0001.jpg
+    │   └─ ...
+    └─ eval/ # evaluation images
+        ├─ syn150/ # images for synthetic eval
+        │    ├─ 0001.jpg
+        │   └─ ...
+        └─ syn_to_real_164/ # real-world eval images
+            ├─ 0001.jpg
+            └─ ...
 
 ```
 
