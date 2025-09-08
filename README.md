@@ -100,51 +100,18 @@ VQA4Thai/
 
 ```
 
-
-
-
-
-
-
-
-
-
-
-
-## 🚀 Quick Start with Google Colab
-
-We provide two demo notebooks to replicate our experiments:
-
-- **Fine-tuned Qwen2.5-VL-3B on synthetic data**  
-  <a href="https://colab.research.google.com/github/YOUR-USERNAME/vlm-knowledge-injection/blob/main/notebooks/FT_SyntheticVQA_Demo.ipynb">
-    <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
-  </a>
-
-- **Reasoning with CoT-augmented training**  
-  <a href="https://colab.research.google.com/github/YOUR-USERNAME/vlm-knowledge-injection/blob/main/notebooks/CoT_VQA_Demo.ipynb">
-    <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
-  </a>
-
-The notebooks include:
-- Automatic environment setup  
-- Checkpoint download (Hugging Face)  
-- Running inference on Thai cultural VQA  
-- Comparing FT vs CoT-trained models  
-
 ---
 
 ## 📥 Pretrained Checkpoints
 
-[![Hugging Face](https://img.shields.io/badge/🤗%20Hugging%20Face-Model%20Hub-yellow.svg)](https://huggingface.co/OHMEGA/VLM-KnowledgeInjection)
+[![Hugging Face](https://img.shields.io/badge/🤗%20Hugging%20Face-Model%20Hub-yellow.svg)](https://huggingface.co/OHMEGA/VQA4Thai_checkpoint)
 
-All checkpoints are available in one Hugging Face repo:  
-👉 [OHMEGA/VLM-KnowledgeInjection](https://huggingface.co/OHMEGA/VLM-KnowledgeInjection)
 
-| Model Variant        | Strategy                | Dataset Scale      | Filename |
+
+| Model Variant        | Strategy                | Dataset Scale      | Foldername |
 |----------------------|-------------------------|-------------------|----------|
-| FT-Qwen2.5-VL-3B     | Full Fine-Tuning (FT)   | Syn-150 (10x)     | `FT_Qwen2.5VL_Syn150_10x.pth` |
-| FT-Qwen2.5-VL-3B-CoT | Full Fine-Tuning (FT)   | Syn-150 + CoT     | `FT_Qwen2.5VL_CoT_5x.pth` |
-| PEFT-Qwen2.5-VL-3B   | QLoRA (4-bit, PEFT)     | Syn-150 (5x)      | `PEFT_Qwen2.5VL_Syn150_5x.pth` |
+| FT-Qwen2.5-VL-3B     | 25% Visual token & 2048 context length | Syn-150 (10x)     | `ckp_5x_revised_256VTC_2048ECL_qwen25` |
+| FT-Qwen2.5-VL-3B-CoT | 25% Visual token & 2048 context length | Syn-150 + CoT     | `CoT_ckp_5x_256VTC_2048ECL_qwen25` |
 
 #### 📌 How to load in Python
 
@@ -153,7 +120,7 @@ from huggingface_hub import hf_hub_download
 
 # Example: load CoT model
 ckpt_path = hf_hub_download(
-    repo_id="OHMEGA/VLM-KnowledgeInjection",
-    filename="FT_Qwen2.5VL_CoT_5x.pth"
+    repo_id="OHMEGA/VQA4Thai_checkpoint",
+    filename="ckp_5x_revised_256VTC_2048ECL_qwen25"
 )
 ```
