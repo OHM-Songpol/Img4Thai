@@ -76,7 +76,7 @@ VQA4Thai/
 ├─ README.md # dataset card
 ├─ data/ # metadata (.jsonl)
 │ ├─ CoT_5x.jsonl # 5x CoT reasoning VQA pairs
-│ ├─ simple_qa_10x.jsonl # 10x Simple VQA pairs
+│ └─ simple_qa_10x.jsonl # 10x Simple VQA pairs
 │ 
 ├─ eval/ # evaluation JSONL sets
 │ ├─ 154_eval_qa.jsonl # Syn-150 synthetic eval set
