@@ -59,7 +59,7 @@ Five stages:
   <img src="Figure3.jpg" width="400"/>
 </p>
 
-**Fig. 4: Efficiency Trade-offs**  
+**Fig. 3: Efficiency Trade-offs**  
 - Best configuration: **25% visual tokens + 2048 context length** → 78% VQA at ~2 GPU hours.  
 - Saves ~60% compute while improving accuracy vs baseline.  
 
