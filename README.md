@@ -32,7 +32,7 @@ This study presents a scalable method to inject domain-specific knowledge into c
 ## 📊 Method
 
 <p align="center">
-  <img src="assets/fig1_pipeline.png" width="700"/>
+  <img src="Figure1.jpg" />
 </p>
 
 **Fig. 1: Synthetic Data Pipeline**  
@@ -48,7 +48,7 @@ Five stages:
 ## 🖼️ Results
 
 <p align="center">
-  <img src="assets/fig2_scaling.png" width="700"/>
+  <img src="Figure2.jpg" />
 </p>
 
 **Fig. 2: Impact of Data Scaling**  
@@ -56,7 +56,7 @@ Five stages:
 - Beyond these points, more synthetic data yields diminishing or negative returns.  
 
 <p align="center">
-  <img src="assets/fig4_efficiency.png" width="700"/>
+  <img src="Figure3.jpg"/>
 </p>
 
 **Fig. 4: Efficiency Trade-offs**  
