@@ -110,17 +110,7 @@ VQA4Thai/
 
 | Model Variant        | Strategy                | Dataset Scale      | Foldername |
 |----------------------|-------------------------|-------------------|----------|
-| FT-Qwen2.5-VL-3B     | 25% Visual token & 2048 context length | Syn-150 (10x)     | `ckp_5x_revised_256VTC_2048ECL_qwen25` |
-| FT-Qwen2.5-VL-3B-CoT | 25% Visual token & 2048 context length | Syn-150 + CoT     | `CoT_ckp_5x_256VTC_2048ECL_qwen25` |
+| FT-Qwen2.5-VL-3B     | 25% Visual token & 2048 context length | 5x Simple VQA) | `ckp_5x_revised_256VTC_2048ECL_qwen25` |
+| FT-Qwen2.5-VL-3B-CoT | 25% Visual token & 2048 context length | 5x CoT VQA     | `CoT_ckp_5x_256VTC_2048ECL_qwen25` |
 
-#### 📌 How to load in Python
 
-```python
-from huggingface_hub import hf_hub_download
-
-# Example: load CoT model
-ckpt_path = hf_hub_download(
-    repo_id="OHMEGA/VQA4Thai_checkpoint",
-    filename="ckp_5x_revised_256VTC_2048ECL_qwen25"
-)
-```
