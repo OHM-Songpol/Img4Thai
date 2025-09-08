@@ -65,7 +65,7 @@ Five stages:
 
 ---
 
-## 📂 Synthetic VQA Data
+## 📂 Synthetic VQA Data & Eval Benchmarks
 
 [![Hugging Face](https://img.shields.io/badge/🤗%20Hugging%20Face-Datasets%20-yellow.svg)](https://huggingface.co/datasets/OHMEGA/VQA4Thai)
 This repository provides **synthetic Thai VQA datasets** for knowledge injection into compact Vision-Language Models.  
