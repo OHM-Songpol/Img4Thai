@@ -48,7 +48,7 @@ Five stages:
 ## 🖼️ Results
 
 <p align="center">
-  <img src="Figure2.jpg" width="700" />
+  <img src="Figure2.jpg" width="400" />
 </p>
 
 **Fig. 2: Impact of Data Scaling**  
@@ -56,7 +56,7 @@ Five stages:
 - Beyond these points, more synthetic data yields diminishing or negative returns.  
 
 <p align="center">
-  <img src="Figure3.jpg" width="600"/>
+  <img src="Figure3.jpg" width="400"/>
 </p>
 
 **Fig. 4: Efficiency Trade-offs**  
