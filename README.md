@@ -67,7 +67,7 @@ Five stages:
 
 ## 📂 Synthetic VQA Data
 
-[![Hugging Face](https://img.shields.io/badge/🤗%20Hugging%20Face-Datasets%20-yellow.svg)](https://huggingface.co/OHMEGA/VQA4Thai)
+[![Hugging Face](https://img.shields.io/badge/🤗%20Hugging%20Face-Datasets%20-yellow.svg)](https://huggingface.co/datasets/OHMEGA/VQA4Thai)
 This repository provides **synthetic Thai VQA datasets** for knowledge injection into compact Vision-Language Models.  
 The dataset includes both **Simple QA** and **Chain-of-Thought (CoT) QA**, with paired images, as well as evaluation sets.  
 
