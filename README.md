@@ -8,10 +8,10 @@ Official repository for the paper:
 
 ## 🌏 Overview
 
-Compact **Vision-Language Models (VLMs)** such as Qwen2.5-VL-3B often lack domain-specific knowledge, especially in **low-resource cultural contexts** like Thai heritage.  
-This project proposes a **synthetic data pipeline** that injects new cultural knowledge into VLMs through supervised fine-tuning with both **simple** and **Chain-of-Thought (CoT)** VQA pairs.  
+Compact **Vision-Language Models (VLMs)** such as Qwen2.5-VL-3B often lack domain-specific knowledge, especially in **low-resource cultural contexts** like  Thai cultural contexts.  
+This study presents a scalable method to inject domain-specific knowledge into compact VLMs using both **simple** and **Chain-of-Thought (CoT)** synthetic VQA pairs, specifically for Thai cultural contexts.
 
-- 🚀 **Efficient knowledge injection** with minimal data (e.g., Syn-150 benchmark: 79% accuracy with 10x augmentation).  
+- 🚀 **Efficient knowledge injection** with minimal data (e.g., Syn-150 benchmark: 79% accuracy with 10x augmentation: 100 VQA pairs per new fact).  
 - 🌉 **Strong sim-to-real generalization**, achieving >88% accuracy in real-world cultural benchmarks (Syn-to-Real-164).  
 - 🧠 **Reasoning boost with CoT data**, outperforming GPT-4o-mini in reasoning benchmarks.  
 - 💡 **Efficiency gains**: 95% higher performance with 60% less compute via visual token reduction + extended context length.  
