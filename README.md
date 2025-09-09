@@ -108,11 +108,10 @@ VQA4Thai/
 
 
 
-| Model Variant        | Strategy                | Dataset Scale      | Foldername |
+| Model Variant        | Strategy                | Dataset Scale      | HF Link |
 |----------------------|-------------------------|-------------------|----------|
-| FT-Qwen2.5-VL-3B     | 25% visual token & 2048 context length | 5x Simple VQA | `ckp_5x_revised_256VTC_2048ECL_qwen25` |
-| FT-Qwen2.5-VL-3B-CoT | 25% visual token & 2048 context length | 5x CoT VQA     | `CoT_ckp_5x_256VTC_2048ECL_qwen25` |
-
+| FT-Qwen2.5-VL-3B     | 25% visual token & 2048 context length | 5x Simple VQA | [Link](https://huggingface.co/OHMEGA/VQA4Thai_checkpoint/tree/main/ckp_5x_revised_256VTC_2048ECL_qwen25) |  
+| FT-Qwen2.5-VL-3B-CoT | 25% visual token & 2048 context length | 5x CoT VQA     | [Link](https://huggingface.co/OHMEGA/VQA4Thai_checkpoint/tree/main/CoT_ckp_5x_256VTC_2048ECL_qwen25) |
 ---
 
 ### 📬 Contact
